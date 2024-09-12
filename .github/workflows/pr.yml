@@ -11,8 +11,8 @@ jobs:
    issue:
      runs-on: ubuntu-latest
      permissions:
-       pull_request: write
-       issue: write
+        pull-requests: write
+        issues: write
      steps: 
        - name: Comment
          uses: actions/github-script@v3
