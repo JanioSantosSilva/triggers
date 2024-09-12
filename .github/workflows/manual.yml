@@ -1,0 +1,15 @@
+# Crie um pipeline do Github actions que execute manualmente
+# Escreva na tela "Olá, Mundo"
+
+name: Manual
+
+on:
+  worflow_dispatch:
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Hello Word
+        run: echo "Olá, Mundo!"
