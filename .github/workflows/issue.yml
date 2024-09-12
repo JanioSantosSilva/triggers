@@ -6,7 +6,9 @@ on:
 
 jobs:
    issue:
-     runs-on: ubuntu-lates
+     runs-on: ubuntu-latest
+     permissions:
+       issues: write
      steps: 
        - name: Comment
          uses: actions/github-script@v3
@@ -17,5 +19,5 @@ jobs:
                 issues_number: context.issues.number,
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                body: 'Thanks for opening this issue!'
+                body: 'Boas vindas ao Projeto!!'
               })
