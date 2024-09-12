@@ -4,9 +4,8 @@
 name: Manual
 
 on:
-  worflow_dispatch:
-
-
+  workflow_dispatch:
+ 
 jobs:
   build:
     runs-on: ubuntu-latest
